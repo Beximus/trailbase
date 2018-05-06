@@ -104,7 +104,7 @@ h1{
 
 #UpdateDataset{
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: 1%;
 	z-index: 3;
 	background: none;
@@ -121,4 +121,43 @@ h1{
 #ud{
 	width: 100%;
 	height: auto;
+}
+
+@media(max-width: 1000px){
+	#ltog{
+		width: 15%;
+	}
+	#lTog a{
+		font-size: 1.3vw;
+	}
+	#UpdateDataset{
+		top:50%;
+		max-width: 5%;
+	}
+}
+
+@media(max-width: 700px){
+	#ltog{
+		width: 30%;
+	}
+	#lTog a{
+		font-size: 1.5vw;
+	}
+	#UpdateDataset{
+		top:50%;
+		max-width: 5%;
+	}
+}
+
+@media(max-width: 500px){
+	#ltog{
+		width: 50%;
+	}
+	#lTog a{
+		font-size: 1.8vw;
+	}
+	#UpdateDataset{
+		top:60%;
+		max-width: 10%;
+	}
 }
