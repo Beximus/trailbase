@@ -353,11 +353,11 @@ map.on('click', 'Expert', function (e) {
 document.getElementById('UpdateDataset').onclick = function(e){
     var details = Draw.getAll();
     if(data.features.length > 0){
-        var convertdeets = 'text/json;charset.utf-8' + encodeURIComponent(JSON.stringify(details));
+        var convertdeets = JSON.stringify(details);
         $.ajax({
         url:"https://api.myjson.com/bins/17ovgi",
         type:"PUT",
-        data:'{"key_updated":"value_updated"}',
+        data: convertdeets,
         contentType:"application/json; charset=utf-8",
         dataType:"json",
         success: function(data, textStatus, jqXHR){
